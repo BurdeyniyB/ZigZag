@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f97b141e1d86d42489d4c5b7b4bc7736, type: 3}
+  m_Name: SkinManager
+  m_EditorClassIdentifier: 
+  skins:
+  - cost: 0
+    texture: {fileID: 2800000, guid: 28ce423ce457b074fa0a99adfacfa930, type: 3}
+  - cost: 100
+    texture: {fileID: 2800000, guid: b3289a9524e7b8d46a0a347600bedd13, type: 3}
+  - cost: 100
+    texture: {fileID: 2800000, guid: 498649b197eb82f4b8581bcfd353f42e, type: 3}
+  - cost: 100
+    texture: {fileID: 2800000, guid: 70cf081af8561b04ba74e2792861011a, type: 3}
+  - cost: 100
+    texture: {fileID: 2800000, guid: cfee8de1676427a4685650a4186d10c1, type: 3}
+  - cost: 100
+    texture: {fileID: 2800000, guid: 3361c425ae39ce54ba43904e51abc7f0, type: 3}
