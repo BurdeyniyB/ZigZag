@@ -5,6 +5,7 @@ using UnityEngine;
 public class BallController : MonoBehaviour {
 
     public GameObject particle;
+    public GameObject storeButton;
 
     [SerializeField] private float speed;
     [SerializeField] private float fallSpeed;
@@ -83,7 +84,7 @@ public class BallController : MonoBehaviour {
 
                 PlayerPrefs.SetInt("Ball", 1);
 
-
+                storeButton.SetActive(false);
         }
       if(LoadAuto == 0)
       {
@@ -119,10 +120,13 @@ public class BallController : MonoBehaviour {
 
         if (col.gameObject.tag == "CubeObstacle")
         {
+         if(LoadAuto == 1 && started)
+         {
          Debug.Log("Destroy position = " + col.gameObject.transform.position);
          Destroy(col.gameObject);
          closet.tag = "Untagged";
          closet = null;
+         }
         }
     }
 
