@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class AutoModeButton : MonoBehaviour
 {
-   public Sprite imTrue;
-   public Sprite imFalse;
+   public Sprite istrue;
+   public Sprite isfalse;
    private int control;
    public Image image;
 
@@ -14,10 +14,10 @@ public class AutoModeButton : MonoBehaviour
    {
      control = PlayerPrefs.GetInt("AutoMode");
      if(control == 1){
-      image.sprite = imTrue;
+      image.sprite = istrue;
      }
      else{
-      image.sprite = imFalse;
+      image.sprite = isfalse;
      }
    }
 
@@ -27,12 +27,12 @@ public class AutoModeButton : MonoBehaviour
      if(control == 0)
      {
      PlayerPrefs.SetInt("AutoMode", 1);
-     image.sprite = imTrue;
+     image.sprite = istrue;
      }
      else
      {
      PlayerPrefs.SetInt("AutoMode", 0);
-     image.sprite = imFalse;
+     image.sprite = isfalse;
      }
    }
 

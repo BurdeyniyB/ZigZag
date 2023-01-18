@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour {
 
-    public GameObject ball;
+    public GameObject myBall;
     Vector3 offset;
-    public float lerpRate;
+    public float Lerp_rate;
     public bool gameOver;
 
 	void Start () {
-        offset = ball.transform.position - transform.position;
+        offset = myBall.transform.position - transform.position;
         gameOver = false;
 	}
 
@@ -22,8 +22,8 @@ public class CameraFollow : MonoBehaviour {
     void Follow()
     {
         Vector3 pos = transform.position;
-        Vector3 targetPos = ball.transform.position - offset;
-        pos = Vector3.Lerp(pos, targetPos, lerpRate * Time.deltaTime);
+        Vector3 targetPos = myBall.transform.position - offset;
+        pos = Vector3.Lerp(pos, targetPos, Lerp_rate * Time.deltaTime);
         transform.position = pos;
     }
 }

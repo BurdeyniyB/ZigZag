@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class PlatformSpawner : MonoBehaviour {
 
-    public GameObject platform;
-    public GameObject diamonds;
+    public GameObject Platform;
+    public GameObject Diamonds;
     public bool gameOver;
     Vector3 lastPosition;
     float size;
 
 
 	void Start () {
-        lastPosition = platform.transform.position;
-        size = platform.transform.localScale.x;
+        lastPosition = Platform.transform.position;
+        size = Platform.transform.localScale.x;
 
         for (int i = 0; i < 20; i++)
             SpawnPlatform();
@@ -42,23 +42,23 @@ public class PlatformSpawner : MonoBehaviour {
     {
         Vector3 pos = lastPosition;
         pos.x += size;
-        Instantiate(platform, pos, Quaternion.identity);
+        Instantiate(Platform, pos, Quaternion.identity);
         lastPosition = pos;
 
         int rand = Random.Range(0, 4);
         if (rand < 1)
-            Instantiate(diamonds, new Vector3(pos.x, pos.y + 1.0f, pos.z), diamonds.transform.rotation);
+            Instantiate(Diamonds, new Vector3(pos.x, pos.y + 1.0f, pos.z), Diamonds.transform.rotation);
     }
 
     void SpawnZ() 
     {
         Vector3 pos = lastPosition;
         pos.z += size;
-        Instantiate(platform, pos, Quaternion.identity);
+        Instantiate(Platform, pos, Quaternion.identity);
         lastPosition = pos;
 
         int rand = Random.Range(0, 4);
         if (rand < 1)
-            Instantiate(diamonds, new Vector3(pos.x, pos.y + 1.0f, pos.z), diamonds.transform.rotation);
+            Instantiate(Diamonds, new Vector3(pos.x, pos.y + 1.0f, pos.z), Diamonds.transform.rotation);
     }
 }

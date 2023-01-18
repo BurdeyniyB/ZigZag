@@ -252,7 +252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particle: {fileID: 1528310350084966, guid: 53578bcaae08685469378a7135cc69fe, type: 3}
   storeButton: {fileID: 348603999}
-  speed: 4
+  speed: 6
   fallSpeed: 25
   enemy: []
   closet: {fileID: 0}
@@ -2931,8 +2931,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cca94b5fd078b6945946afe5b83947c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  platform: {fileID: 1453713071249950, guid: 47c86e8878cabec4db0eb18dae8d7c94, type: 3}
-  diamonds: {fileID: 1613304439394178, guid: d85da43e1d3cff243a9454678483e773, type: 3}
+  Platform: {fileID: 1453713071249950, guid: 47c86e8878cabec4db0eb18dae8d7c94, type: 3}
+  Diamonds: {fileID: 1613304439394178, guid: d85da43e1d3cff243a9454678483e773, type: 3}
   gameOver: 0
 --- !u!4 &1046292684
 Transform:
@@ -3593,16 +3593,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcf13ae01deedc6448e9270d61ca1047, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  titlePanel: {fileID: 1918035005}
-  gameOverPanel: {fileID: 205488142}
-  tapText: {fileID: 1539451123}
-  scoreGameObj: {fileID: 466092652}
-  diamondGameObj: {fileID: 474089297}
-  scoreGame: {fileID: 466092654}
-  diamondGame: {fileID: 474089299}
-  score: {fileID: 1982289217}
-  highScore1: {fileID: 216906900}
-  highScore2: {fileID: 281634574}
+  title_Panel: {fileID: 1918035005}
+  game_Over_Panel: {fileID: 205488142}
+  tap_Text: {fileID: 1539451123}
+  score_Game_Obj: {fileID: 466092652}
+  diamond_Game_Obj: {fileID: 474089297}
+  Score_Game: {fileID: 466092654}
+  Diamond_Game: {fileID: 474089299}
+  Score: {fileID: 1982289217}
+  High_Score_1: {fileID: 216906900}
+  High_Score_2: {fileID: 281634574}
 --- !u!1 &1324901578
 GameObject:
   m_ObjectHideFlags: 0
@@ -4129,8 +4129,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b02fca7392cb1944f969aba4012563f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imTrue: {fileID: 21300000, guid: 6ed18601f275b4f8fa32d21d0f35343c, type: 3}
-  imFalse: {fileID: 21300000, guid: cff2074e06df54190876089e6dbf29d5, type: 3}
+  istrue: {fileID: 21300000, guid: 6ed18601f275b4f8fa32d21d0f35343c, type: 3}
+  isfalse: {fileID: 21300000, guid: cff2074e06df54190876089e6dbf29d5, type: 3}
   image: {fileID: 1480345516}
 --- !u!114 &1480345515
 MonoBehaviour:
@@ -4489,7 +4489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.991}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6670,8 +6670,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 258dd2fb6defa43429dbbb7358bc6c7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ball: {fileID: 130530}
-  lerpRate: 2
+  myBall: {fileID: 130530}
+  Lerp_rate: 2
   gameOver: 0
 --- !u!1 &2131986903
 GameObject:
